@@ -10,6 +10,7 @@ public class Fire : MonoBehaviour
     private GameObject bullet;
     Vector2 vec;
     int direction = 0;
+    [SerializeField] float appearanceTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,25 +27,27 @@ public class Fire : MonoBehaviour
             {
                 vec = Vector2.up * 3.5f;
                 direction = 1;
+                
             }
 
             else
             {
                 vec = Vector2.down * 2.5f;
                 direction = -1;
+                
             }
-            StartCoroutine(CreateBullet(vec,direction));
+            StartCoroutine(CreateBullet(vec, direction, appearanceTime));
         }
     }
 
-    private IEnumerator CreateBullet(Vector2 vec, int direction)
+    private IEnumerator CreateBullet(Vector2 vec, int direction, float speed)
     {
         bullet = Instantiate(prefabBullet) as GameObject;
         bullet.GetComponent<MeshRenderer>().material = _material;
         bullet.transform.position = transform.TransformPoint(vec);
         bullet.GetComponent<BulletBehavior>().SetDirection(direction);
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(speed);
         flag = true;
         
     }

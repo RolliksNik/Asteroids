@@ -290,3 +290,4 @@ MonoBehaviour:
   prefabBullet: {fileID: 238174160177613071, guid: 5f581d36fef53644581317a80c2178f0,
     type: 3}
   _material: {fileID: 2100000, guid: f6f66ce4f0d0def468814dc5d7c7c735, type: 2}
+  appearanceTime: 2

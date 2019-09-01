@@ -94,6 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBullet: {fileID: 238174160177613071, guid: 5f581d36fef53644581317a80c2178f0,
     type: 3}
+  _material: {fileID: 2100000, guid: 130d1d85444f6c8438021168496363b8, type: 2}
+  appearanceTime: 2
 --- !u!61 &3183285228639609559
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -227,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23f47dbd5f54ce54d84995bf7fec01c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _text: {fileID: 0}
 --- !u!61 &3290337219345469981
 BoxCollider2D:
   m_ObjectHideFlags: 0

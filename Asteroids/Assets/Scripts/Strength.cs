@@ -21,9 +21,10 @@ public class Strength : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (gameObject.name == "GUN")
+        if (gameObject.name == "Gun")
         {
             _strength = (int)Protection.Gun;
+            Debug.Log("GUN");
         }
 
         else if (gameObject.name == "Protection1")

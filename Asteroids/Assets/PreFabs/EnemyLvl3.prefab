@@ -610,6 +610,7 @@ MonoBehaviour:
   prefabBullet: {fileID: 238174160177613071, guid: 5f581d36fef53644581317a80c2178f0,
     type: 3}
   _material: {fileID: 2100000, guid: f6f66ce4f0d0def468814dc5d7c7c735, type: 2}
+  appearanceTime: 2
 --- !u!61 &3472629348270822452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -744,6 +745,7 @@ MonoBehaviour:
   prefabBullet: {fileID: 238174160177613071, guid: 5f581d36fef53644581317a80c2178f0,
     type: 3}
   _material: {fileID: 2100000, guid: f6f66ce4f0d0def468814dc5d7c7c735, type: 2}
+  appearanceTime: 2
 --- !u!61 &4627531577347293620
 BoxCollider2D:
   m_ObjectHideFlags: 0
