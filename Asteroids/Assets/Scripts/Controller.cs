@@ -11,6 +11,7 @@ public class Controller : MonoBehaviour
     void Start()
     {
         _gameOver.enabled = false;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
