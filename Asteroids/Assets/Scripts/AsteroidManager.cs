@@ -19,13 +19,9 @@ public class AsteroidManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.GetComponentInParent<PlayerManager>() != null)
-        {
-            collision.GetComponentInParent<PlayerManager>().ChangeHealth(collisionDamage);
-            Destroy(this.gameObject);
-        }
+        
 
-        else if(collision.GetComponent<Trig>() == null)
+        if(collision.GetComponent<Trig>() == null && collision.GetComponentInParent<PlayerManager>() == null)
         {
             Destroy(collision.gameObject);
         }
