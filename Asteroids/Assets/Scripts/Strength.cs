@@ -24,7 +24,7 @@ public class Strength : MonoBehaviour
         if (gameObject.name == "Gun")
         {
             _strength = (int)Protection.Gun;
-            Debug.Log("GUN");
+            
         }
 
         else if (gameObject.name == "Protection1")
@@ -32,17 +32,19 @@ public class Strength : MonoBehaviour
             _strength = (int)Protection.Protection1;
         }
 
-        else if(gameObject.name == "Asteroid1")
+        else if(gameObject.name == "Asteroid1(Clone)")
         {
             _strength = (int)Protection.Asteroid1;
+           ;
         }
 
-        else if (gameObject.name == "Asteroid2")
+        else if (gameObject.name == "Asteroid2(Clone)")
         {
             _strength = (int)Protection.Asteroid2;
+            
         }
 
-        else if (gameObject.name == "Asteroid3")
+        else if (gameObject.name == "Asteroid3(Clone)")
         {
             _strength = (int)Protection.Asteroid3;
         }

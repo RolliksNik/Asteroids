@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AsteroidManager : MonoBehaviour
 {
-    [SerializeField] int collisionDamage;
+
     // Start is called before the first frame update
     void Start()
     {
